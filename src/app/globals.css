@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.top-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+}
+
+.top-logo-area,
+.top-controls-area {
+  min-width: 0;
+}
+
+.top-controls-area {
+  justify-self: end;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.brand-logo-list {
+  display: flex;
+  width: 100%;
+}
+
+.brand-logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-logo-item {
+  width: 62px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(25, 118, 210, 0.16);
+  background: rgba(25, 118, 210, 0.045);
+}
+
+.brand-logo-item img {
+  display: block;
+  width: 50px;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (prefers-color-scheme: dark) {
+  .brand-logo-item {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+@media (max-width: 899px) {
+  .top-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .top-controls-area {
+    justify-self: stretch;
+    justify-content: stretch;
+  }
+}
