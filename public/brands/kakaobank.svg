@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 139" width="640" height="139" role="img" aria-labelledby="kakao-title">
+  <title id="kakao-title">KakaoBank Logo</title>
+
+  <style>
+    .text-gray {
+    fill: rgb(97, 97, 97);
+    }
+
+    .kakao-word {
+    font-family: "Inter", "Pretendard", "Noto Sans KR", Arial, sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    }
+
+    .kakao-symbol {
+    font-family: "Arial Black", "Inter", Arial, sans-serif;
+    font-size: 112px;
+    font-weight: 900;
+    }
+  </style>
+
+  <!-- Yellow symbol box -->
+  <rect x="0" y="0" width="139" height="139" rx="12" fill="#FEE500"/>
+
+  <!-- B symbol -->
+  <text x="69.5" y="109" text-anchor="middle" class="kakao-symbol text-gray">B</text>
+
+  <!-- Wordmark -->
+  <text x="174" y="103" class="kakao-word text-gray">kakaobank</text>
+</svg>
