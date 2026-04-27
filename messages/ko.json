@@ -1,0 +1,86 @@
+{
+  "common": {
+    "appTitle": "Payment-Method",
+    "appDescription": "신용/체크카드 및 PayPal 결제 데모",
+    "home": "처음으로",
+    "retryPayment": "다시 결제하기",
+    "loading": "로딩 중..."
+  },
+  "theme": {
+    "label": "테마",
+    "system": "시스템",
+    "light": "라이트",
+    "dark": "다크",
+    "night": "나이트"
+  },
+  "language": {
+    "label": "언어",
+    "english": "영문",
+    "korean": "한글"
+  },
+  "checkout": {
+    "supportedBrands": "지원 결제 브랜드",
+    "headline": "Payment-Method",
+    "subheadline": "신용/체크카드 및 PayPal 결제 데모",
+    "info": "카드와 PayPal 결제 데모 폼입니다. 실제 결제가 청구되지는 않습니다.",
+    "amountLabel": "결제 금액 (KRW)",
+    "amountHelper": "총 결제 금액: {amount}원",
+    "billingMethod": "결제 수단",
+    "cardMethod": "신용 또는 체크카드",
+    "paypalMethod": "PayPal",
+    "cardType": "카드 종류",
+    "kakaoBank": "카카오뱅크 카드",
+    "tossBank": "토스뱅크 카드",
+    "generalCard": "그 외 카드",
+    "customerName": "구매자 성명",
+    "customerEmail": "이메일",
+    "phoneNumber": "카카오톡 알림 수신 전화번호",
+    "phoneHelper": "결제 승인 후 KakaoTalk API로 알림이 자동 발송됩니다.",
+    "payNow": "{amount}원 결제하기",
+    "submitting": "처리 중...",
+    "paypalSandboxHint": "PayPal Sandbox 테스트에는 PayPal Developer에서 발급한 Client ID와 Secret이 필요합니다.",
+    "orderName": "샘플 결제 {amount}원"
+  },
+  "validation": {
+    "amountMin": "결제 금액은 1,000원 이상의 정수여야 합니다.",
+    "phoneInvalid": "카카오톡 알림을 받을 전화번호를 01012345678 형식으로 입력해 주세요.",
+    "missingTossKey": "NEXT_PUBLIC_TOSS_CLIENT_KEY 환경 변수를 먼저 설정해 주세요.",
+    "paymentWindowError": "결제창을 여는 중 오류가 발생했습니다."
+  },
+  "paypal": {
+    "sdkLoadError": "PayPal SDK 스크립트를 불러오지 못했습니다.",
+    "missingClientId": "NEXT_PUBLIC_PAYPAL_CLIENT_ID 환경 변수를 먼저 설정해 주세요.",
+    "createOrderError": "PayPal 주문 생성에 실패했습니다.",
+    "missingOrderId": "승인된 PayPal 주문 번호가 없습니다.",
+    "captureError": "PayPal 결제 캡처에 실패했습니다.",
+    "completed": "PayPal 결제가 완료되었습니다.",
+    "kakaoSuffix": "카카오톡 알림: {message}",
+    "paymentError": "PayPal 결제 중 오류가 발생했습니다.",
+    "cancelled": "PayPal 결제가 취소되었습니다.",
+    "renderError": "PayPal 버튼을 표시하는 중 오류가 발생했습니다.",
+    "buttonLoading": "PayPal 버튼 준비 중..."
+  },
+  "success": {
+    "title": "결제 승인 결과",
+    "loading": "결제 승인 처리 중...",
+    "missingParams": "결제 승인에 필요한 URL 파라미터가 없습니다.",
+    "missingLocalOrder": "로컬 주문 정보를 찾을 수 없습니다. 같은 브라우저에서 다시 결제를 시도해 주세요.",
+    "amountMismatch": "결제 요청 금액과 승인 금액이 달라 결제 승인을 중단했습니다.",
+    "apiError": "결제 승인 API 호출에 실패했습니다.",
+    "unknownError": "알 수 없는 오류가 발생했습니다.",
+    "confirmed": "결제가 정상 승인되었습니다.",
+    "orderId": "주문번호: {value}",
+    "orderName": "주문명: {value}",
+    "method": "결제수단: {value}",
+    "amount": "승인금액: {value}원",
+    "approvedAt": "승인시각: {value}",
+    "kakaoResult": "카카오톡 알림 결과: {message} ({mode})"
+  },
+  "fail": {
+    "title": "결제 실패",
+    "alert": "결제가 정상적으로 완료되지 않았습니다.",
+    "code": "오류 코드: {value}",
+    "message": "메시지: {value}",
+    "orderId": "주문번호: {value}"
+  }
+}
