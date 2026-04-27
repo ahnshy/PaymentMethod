@@ -1,0 +1,86 @@
+{
+  "common": {
+    "appTitle": "Payment-Method",
+    "appDescription": "Payment via credit and debit card billing or PayPal demo",
+    "home": "Back to home",
+    "retryPayment": "Try payment again",
+    "loading": "Loading..."
+  },
+  "theme": {
+    "label": "Appearance",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "night": "Night"
+  },
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "korean": "Korean"
+  },
+  "checkout": {
+    "supportedBrands": "Supported payment brands",
+    "headline": "Payment-Method",
+    "subheadline": "Payment via credit and debit card billing or PayPal demo",
+    "info": "Credit card and PayPal demo form. This is for demonstration purposes only; no actual payments will be charged.",
+    "amountLabel": "Payment amount (KRW)",
+    "amountHelper": "Total payment: {amount} KRW",
+    "billingMethod": "Billing method",
+    "cardMethod": "Credit or debit card",
+    "paypalMethod": "PayPal",
+    "cardType": "Type of card",
+    "kakaoBank": "KakaoBank card",
+    "tossBank": "TossBank card",
+    "generalCard": "Other card",
+    "customerName": "Customer name",
+    "customerEmail": "Email",
+    "phoneNumber": "Phone number for KakaoTalk notifications",
+    "phoneHelper": "After payment approval, a notification will be sent automatically via the KakaoTalk API.",
+    "payNow": "Pay now {amount} KRW",
+    "submitting": "Processing...",
+    "paypalSandboxHint": "PayPal Sandbox tests require a client ID and secret issued from PayPal Developer.",
+    "orderName": "Sample payment {amount} KRW"
+  },
+  "validation": {
+    "amountMin": "Payment amount must be an integer of 1,000 KRW or more.",
+    "phoneInvalid": "Enter the phone number that should receive KakaoTalk notifications in 01012345678 format.",
+    "missingTossKey": "Set the NEXT_PUBLIC_TOSS_CLIENT_KEY environment variable first.",
+    "paymentWindowError": "An error occurred while opening the payment window."
+  },
+  "paypal": {
+    "sdkLoadError": "Failed to load the PayPal SDK script.",
+    "missingClientId": "Set the NEXT_PUBLIC_PAYPAL_CLIENT_ID environment variable first.",
+    "createOrderError": "Failed to create the PayPal order.",
+    "missingOrderId": "The approved PayPal order ID is missing.",
+    "captureError": "Failed to capture the PayPal payment.",
+    "completed": "PayPal payment completed successfully.",
+    "kakaoSuffix": "KakaoTalk notification: {message}",
+    "paymentError": "An error occurred during the PayPal payment.",
+    "cancelled": "The PayPal payment was cancelled.",
+    "renderError": "An error occurred while rendering the PayPal button.",
+    "buttonLoading": "Preparing PayPal button..."
+  },
+  "success": {
+    "title": "Payment confirmation result",
+    "loading": "Confirming payment...",
+    "missingParams": "The URL is missing required payment confirmation parameters.",
+    "missingLocalOrder": "Could not find the local order data. Retry the payment in the same browser.",
+    "amountMismatch": "The requested amount and confirmation amount do not match. Payment confirmation was blocked.",
+    "apiError": "The payment confirmation API request failed.",
+    "unknownError": "An unknown error occurred.",
+    "confirmed": "The payment was confirmed successfully.",
+    "orderId": "Order ID: {value}",
+    "orderName": "Order name: {value}",
+    "method": "Payment method: {value}",
+    "amount": "Confirmed amount: {value} KRW",
+    "approvedAt": "Approved at: {value}",
+    "kakaoResult": "KakaoTalk notification result: {message} ({mode})"
+  },
+  "fail": {
+    "title": "Payment failed",
+    "alert": "The payment did not complete successfully.",
+    "code": "Error code: {value}",
+    "message": "Message: {value}",
+    "orderId": "Order ID: {value}"
+  }
+}
